@@ -1,0 +1,428 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deals | Voltrix Appliances</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="electrical.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg>
+      </span>
+      Voltrix
+    </a>
+
+    <nav class="main-nav">
+      <a href="index.html#shop">Shop</a>
+      <a href="categories.html">Categories</a>
+      <a href="deals.html" class="active">Deals</a>
+      <a href="support.html">Support</a>
+    </nav>
+
+    <a href="index.html#quote" class="btn btn-primary">Get a Quote</a>
+  </div>
+</header>
+
+<!-- ================= BREADCRUMB ================= -->
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="index.html">Home</a>
+    <span>/</span>
+    <span class="current">Deals</span>
+  </div>
+</div>
+
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero deals-hero">
+  <span class="eyebrow">Rated for Savings</span>
+  <h1>Deals That Actually Move the Needle.</h1>
+  <p>
+    No inflated "was" prices. Every deal below is checked against our
+    90-day average selling price before it goes live.
+  </p>
+
+  <div class="countdown-plate">
+    <span class="countdown-label">Sale Ends In</span>
+    <div class="countdown-units">
+      <div class="countdown-cell">
+        <span class="cd-value" id="cdHours">00</span>
+        <span class="cd-label">Hrs</span>
+      </div>
+      <span class="cd-colon">:</span>
+      <div class="countdown-cell">
+        <span class="cd-value" id="cdMinutes">00</span>
+        <span class="cd-label">Min</span>
+      </div>
+      <span class="cd-colon">:</span>
+      <div class="countdown-cell">
+        <span class="cd-value" id="cdSeconds">00</span>
+        <span class="cd-label">Sec</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEAL OF THE DAY ================= -->
+<section class="deal-of-day">
+  <div class="dod-card">
+
+    <div class="dod-media">
+      <span class="dod-badge">Deal of the Day</span>
+      <img src="https://images.unsplash.com/photo-1762341123870-d706f257a12e?auto=format&fit=crop&w=900&q=80" alt="Voltrix CoolBreeze split AC">
+    </div>
+
+    <div class="dod-content">
+      <span class="eyebrow">Cooling &amp; Climate</span>
+      <h2>Voltrix CoolBreeze 1.5T</h2>
+      <p>Inverter split air conditioner — our single biggest markdown of the month, while stock lasts.</p>
+
+      <div class="price-row">
+        <span class="price-now">₹36,999</span>
+        <span class="price-was">₹49,999</span>
+        <span class="price-off">26% off</span>
+      </div>
+
+      <div class="nameplate nameplate-inline">
+        <div class="nameplate-item">
+          <span class="np-label">Rated Voltage</span>
+          <span class="np-value">230V ~ 50Hz</span>
+        </div>
+        <div class="nameplate-item">
+          <span class="np-label">Power</span>
+          <span class="np-value">1500W</span>
+        </div>
+        <div class="nameplate-item">
+          <span class="np-label">Efficiency</span>
+          <span class="np-value">5 Star</span>
+        </div>
+      </div>
+
+      <a href="product.html" class="btn btn-primary">Grab This Deal</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FILTER TABS + DEALS GRID ================= -->
+<section class="deals-section" id="shop">
+  <div class="section-head">
+    <span class="section-tag">All Current Deals</span>
+    <h2>More Ways to Save</h2>
+  </div>
+
+  <div class="filter-tabs">
+    <button class="filter-tab active" data-filter="all">All</button>
+    <button class="filter-tab" data-filter="kitchen">Kitchen</button>
+    <button class="filter-tab" data-filter="cooling">Cooling</button>
+    <button class="filter-tab" data-filter="laundry">Laundry</button>
+    <button class="filter-tab" data-filter="smart">Smart Home</button>
+  </div>
+
+  <div class="deals-grid">
+
+    <article class="deal-card" data-category="kitchen">
+      <span class="deal-ribbon">15% OFF</span>
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=700&q=80" alt="Voltrix Frost refrigerator">
+      </div>
+      <div class="product-body">
+        <h3>Voltrix Frost 480L</h3>
+        <p>Frost-free double-door refrigerator</p>
+        <div class="deal-price-row">
+          <span class="product-price">₹46,999</span>
+          <span class="price-was-small">₹54,999</span>
+        </div>
+      </div>
+      <div class="nameplate nameplate-card">
+        <span class="np-value">230V</span>
+        <span class="np-sep">~</span>
+        <span class="np-value">50Hz</span>
+        <span class="np-sep">~</span>
+        <span class="np-value">190W</span>
+      </div>
+    </article>
+
+    <article class="deal-card" data-category="laundry">
+      <span class="deal-ribbon">17% OFF</span>
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=700&q=80" alt="Voltrix SpinPro washing machine">
+      </div>
+      <div class="product-body">
+        <h3>Voltrix SpinPro 8kg</h3>
+        <p>Front-load washing machine</p>
+        <div class="deal-price-row">
+          <span class="product-price">₹32,499</span>
+          <span class="price-was-small">₹38,999</span>
+        </div>
+      </div>
+      <div class="nameplate nameplate-card">
+        <span class="np-value">230V</span>
+        <span class="np-sep">~</span>
+        <span class="np-value">50Hz</span>
+        <span class="np-sep">~</span>
+        <span class="np-value">2000W</span>
+      </div>
+    </article>
+
+    <article class="deal-card" data-category="cooling">
+      <span class="deal-ribbon">26% OFF</span>
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1762341123870-d706f257a12e?auto=format&fit=crop&w=700&q=80" alt="Voltrix CoolBreeze split AC">
+      </div>
+      <div class="product-body">
+        <h3>Voltrix CoolBreeze 1.5T</h3>
+        <p>Inverter split air conditioner</p>
+        <div class="deal-price-row">
+          <span class="product-price">₹36,999</span>
+          <span class="price-was-small">₹49,999</span>
+        </div>
+      </div>
+      <div class="nameplate nameplate-card">
+        <span class="np-value">230V</span>
+        <span class="np-sep">~</span>
+        <span class="np-value">50Hz</span>
+        <span class="np-sep">~</span>
+        <span class="np-value">1500W</span>
+      </div>
+    </article>
+
+    <article class="deal-card" data-category="kitchen">
+      <span class="deal-ribbon">21% OFF</span>
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1610527003928-47afd5f470c6?auto=format&fit=crop&w=700&q=80" alt="Voltrix ChefLine microwave oven">
+      </div>
+      <div class="product-body">
+        <h3>Voltrix ChefLine 28L</h3>
+        <p>Smart convection microwave oven</p>
+        <div class="deal-price-row">
+          <span class="product-price">₹7,499</span>
+          <span class="price-was-small">₹9,499</span>
+        </div>
+      </div>
+      <div class="nameplate nameplate-card">
+        <span class="np-value">230V</span>
+        <span class="np-sep">~</span>
+        <span class="np-value">50Hz</span>
+        <span class="np-sep">~</span>
+        <span class="np-value">1200W</span>
+      </div>
+    </article>
+
+    <article class="deal-card" data-category="kitchen">
+      <span class="deal-ribbon">28% OFF</span>
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1608193851971-96c2a1f2896c?auto=format&fit=crop&w=700&q=80" alt="Voltrix QuickBoil electric kettle">
+      </div>
+      <div class="product-body">
+        <h3>Voltrix QuickBoil 1.5L</h3>
+        <p>Rapid-boil electric kettle</p>
+        <div class="deal-price-row">
+          <span class="product-price">₹1,799</span>
+          <span class="price-was-small">₹2,499</span>
+        </div>
+      </div>
+      <div class="nameplate nameplate-card">
+        <span class="np-value">230V</span>
+        <span class="np-sep">~</span>
+        <span class="np-value">50Hz</span>
+        <span class="np-sep">~</span>
+        <span class="np-value">1500W</span>
+      </div>
+    </article>
+
+    <article class="deal-card" data-category="cooling">
+      <span class="deal-ribbon">29% OFF</span>
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1565515856776-dfd807686055?auto=format&fit=crop&w=700&q=80" alt="Voltrix AirCool pedestal fan">
+      </div>
+      <div class="product-body">
+        <h3>Voltrix AirCool Pedestal</h3>
+        <p>3-speed oscillating pedestal fan</p>
+        <div class="deal-price-row">
+          <span class="product-price">₹2,499</span>
+          <span class="price-was-small">₹3,499</span>
+        </div>
+      </div>
+      <div class="nameplate nameplate-card">
+        <span class="np-value">230V</span>
+        <span class="np-sep">~</span>
+        <span class="np-value">50Hz</span>
+        <span class="np-sep">~</span>
+        <span class="np-value">65W</span>
+      </div>
+    </article>
+
+    <article class="deal-card" data-category="laundry">
+      <span class="deal-ribbon">30% OFF</span>
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1540544093-b0880061e1a5?auto=format&fit=crop&w=700&q=80" alt="Voltrix PressPro steam iron">
+      </div>
+      <div class="product-body">
+        <h3>Voltrix PressPro Steam Iron</h3>
+        <p>Ceramic-sole steam iron</p>
+        <div class="deal-price-row">
+          <span class="product-price">₹1,399</span>
+          <span class="price-was-small">₹1,999</span>
+        </div>
+      </div>
+      <div class="nameplate nameplate-card">
+        <span class="np-value">230V</span>
+        <span class="np-sep">~</span>
+        <span class="np-value">50Hz</span>
+        <span class="np-sep">~</span>
+        <span class="np-value">1600W</span>
+      </div>
+    </article>
+
+    <article class="deal-card" data-category="smart">
+      <span class="deal-ribbon">30% OFF</span>
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1519558260268-cde7e03a0152?auto=format&fit=crop&w=700&q=80" alt="Voltrix EchoHome smart speaker">
+      </div>
+      <div class="product-body">
+        <h3>Voltrix EchoHome</h3>
+        <p>Voice-controlled smart home hub</p>
+        <div class="deal-price-row">
+          <span class="product-price">₹3,499</span>
+          <span class="price-was-small">₹4,999</span>
+        </div>
+      </div>
+      <div class="nameplate nameplate-card">
+        <span class="np-value">230V</span>
+        <span class="np-sep">~</span>
+        <span class="np-value">50Hz</span>
+        <span class="np-sep">~</span>
+        <span class="np-value">15W</span>
+      </div>
+    </article>
+
+  </div>
+
+  <p class="empty-state" id="emptyState">No deals in this category right now — check back soon.</p>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta-banner" id="quote">
+  <div class="cta-inner">
+    <span class="section-tag cta-tag">Never Miss a Drop</span>
+    <h2>Get Deals Before Everyone Else.</h2>
+    <p>
+      We send one email a week — real markdowns only, no daily spam.
+    </p>
+    <div class="cta-actions">
+      <a href="index.html#quote" class="btn btn-light">Get a Quote</a>
+      <a href="support.html" class="btn btn-outline-light">Talk to an Expert</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer" id="support">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <a href="index.html" class="logo footer-logo">
+        <span class="logo-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg>
+        </span>
+        Voltrix
+      </a>
+      <p>Certified home appliances with nationwide installation and support.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="X">𝕏</a>
+        <a href="#" aria-label="Instagram">◎</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h5>Shop</h5>
+      <a href="categories.html">Kitchen Appliances</a>
+      <a href="categories.html">Cooling &amp; Climate</a>
+      <a href="categories.html">Laundry Care</a>
+      <a href="categories.html">Smart Home</a>
+    </div>
+
+    <div class="footer-col">
+      <h5>Support</h5>
+      <a href="support.html">Track Order</a>
+      <a href="support.html">Warranty Policy</a>
+      <a href="support.html">Installation</a>
+      <a href="support.html">FAQs</a>
+    </div>
+
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <p>221 Industrial Estate Road, Bengaluru, India</p>
+      <p>+91 80 4567 1230</p>
+      <p>support@voltrix.com</p>
+    </div>
+
+  </div>
+
+  <hr>
+
+  <p class="copyright">© 2026 Voltrix Appliances. All rights reserved.</p>
+</footer>
+
+<script>
+  // Countdown timer — resets to a fresh 6-hour window whenever it hits zero
+  var target = new Date().getTime() + (6 * 60 * 60 * 1000);
+
+  function pad(n){ return n < 10 ? '0' + n : '' + n; }
+
+  function tick(){
+    var now = new Date().getTime();
+    var diff = target - now;
+
+    if (diff <= 0){
+      target = new Date().getTime() + (6 * 60 * 60 * 1000);
+      diff = target - now;
+    }
+
+    var hours = Math.floor(diff / (1000 * 60 * 60));
+    var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById('cdHours').textContent = pad(hours);
+    document.getElementById('cdMinutes').textContent = pad(minutes);
+    document.getElementById('cdSeconds').textContent = pad(seconds);
+  }
+
+  tick();
+  setInterval(tick, 1000);
+
+  // Filter tabs
+  var tabs = document.querySelectorAll('.filter-tab');
+  var cards = document.querySelectorAll('.deal-card');
+  var emptyState = document.getElementById('emptyState');
+
+  tabs.forEach(function(tab){
+    tab.addEventListener('click', function(){
+      tabs.forEach(function(t){ t.classList.remove('active'); });
+      tab.classList.add('active');
+
+      var filter = tab.getAttribute('data-filter');
+      var visibleCount = 0;
+
+      cards.forEach(function(card){
+        var match = filter === 'all' || card.getAttribute('data-category') === filter;
+        card.style.display = match ? '' : 'none';
+        if (match) visibleCount++;
+      });
+
+      emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+    });
+  });
+</script>
+
+</body>
+</html>
